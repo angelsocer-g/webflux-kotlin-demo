@@ -26,6 +26,15 @@ dependencies {
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
+	// Elasticsearch dependencies
+	implementation("org.springframework.boot:spring-boot-starter-data-elasticsearch")
+	implementation("co.elastic.clients:elasticsearch-java:8.12.0")
+	implementation("jakarta.json:jakarta.json-api:2.1.3")
+
+	// Scheduler
+	implementation("org.springframework.boot:spring-boot-starter-quartz")
+
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("org.postgresql:r2dbc-postgresql")
